@@ -1,16 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import englishText from "./english.json";
+import hindiText from "./hindi.json";
 
 const resources = {
   en: {
-    translation: {
-      "About Us": "About Us",
-    },
+    translation: englishText,
   },
   hin: {
-    translation: {
-      "About Us": "Hamare Bareme",
-    },
+    translation: hindiText,
   },
 };
 
@@ -18,7 +16,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: "en",
+    lng: localStorage.getItem("lang") || "en",
   });
 
 export default i18n;

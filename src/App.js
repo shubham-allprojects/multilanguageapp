@@ -2,8 +2,9 @@ import "./App.css";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import Navbar from "./components/1.Navbar/Navbar";
-import About from "./components/2.About/About";
+import About from "./components/3.About/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/2.HomePage/Home";
 
 function App() {
   const { i18n } = useTranslation();
@@ -24,6 +25,7 @@ function App() {
     <BrowserRouter>
       <Navbar changeLanguage={changeLanguage} />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </BrowserRouter>

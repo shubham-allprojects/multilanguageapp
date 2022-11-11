@@ -1,6 +1,5 @@
 import "./App.css";
-import { useTranslation } from "react-i18next";
-import { Trans } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import { useEffect } from "react";
 
 function App() {
@@ -62,6 +61,9 @@ function App() {
                 >
                   <option id="en" value="en">
                     English
+                  </option>
+                  <option id="mar" value="mar">
+                    मराठी
                   </option>
                   <option id="hin" value="hin">
                     हिंदी

@@ -23,19 +23,24 @@ const Navbar = ({ changeLanguage }) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item pe-2">
+              <NavLink to="/" className="nav-link" aria-current="page">
+                <Trans>Home</Trans>
+              </NavLink>
+            </li>
+            <li className="nav-item pe-2">
               <NavLink to="/about" className="nav-link" aria-current="page">
                 <Trans>About Us</Trans>
               </NavLink>
             </li>
             <li className="nav-item pe-2">
-              <a className="nav-link" href="/">
+              <NavLink className="nav-link" to="/">
                 <Trans>Features</Trans>
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item pe-2">
-              <a className="nav-link" href="/">
+              <NavLink className="nav-link" to="/">
                 <Trans>Pricing</Trans>
-              </a>
+              </NavLink>
             </li>
 
             <li className="nav-item pe-2">

@@ -1,7 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import hindiText from "./hindi.json";
-import marathiText from "./marathi.json";
+import hindiText from "./components/4.TranslationData/hindi.json";
+import marathiText from "./components/4.TranslationData/marathi.json";
 
 const resources = {
   en: {

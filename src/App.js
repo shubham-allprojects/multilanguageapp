@@ -1,8 +1,9 @@
 import "./App.css";
 import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -25,7 +26,7 @@ function App() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item pe-2">
                 <a className="nav-link active" aria-current="page" href="/">
-                  {t("About Us")}
+                  <Trans>About Us</Trans>
                 </a>
               </li>
               <li className="nav-item pe-2">

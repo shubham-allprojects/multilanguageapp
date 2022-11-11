@@ -1,11 +1,10 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import englishText from "./english.json";
 import hindiText from "./hindi.json";
 
 const resources = {
   en: {
-    translation: englishText,
+    translation: {},
   },
   hin: {
     translation: hindiText,

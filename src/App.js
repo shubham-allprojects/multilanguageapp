@@ -22,7 +22,7 @@ function App() {
   });
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/multilanguageapp">
       <Navbar changeLanguage={changeLanguage} />
       <Routes>
         <Route path="/" element={<Home />} />

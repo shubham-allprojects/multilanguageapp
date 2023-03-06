@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import Navbar from "./components/1.Navbar/Navbar";
 import About from "./components/3.About/About";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./components/2.HomePage/Home";
 
 function App() {
@@ -22,13 +22,13 @@ function App() {
   });
 
   return (
-    <BrowserRouter basename="/multilanguageapp">
+    <HashRouter>
       <Navbar changeLanguage={changeLanguage} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
